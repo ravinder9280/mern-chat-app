@@ -16,7 +16,7 @@ function App() {
 				<Route path='/' element={authUser ? <Home /> : <Navigate to={"/login"} />} />
 				<Route path='/login' element={authUser ? <Navigate to='/' /> : <Login />} />
 				<Route path='/signup' element={authUser ? <Navigate to='/' /> : <SignUp />} />
-				<Route path='/message' element={authUser ? <MessageContainer /> : <Navigate to={"/login"} />} />
+				<Route path='/message' element={authUser ? <MessageContainer  /> : <Navigate to={"/login"} />} />
 
 			</Routes>
 			<Toaster />

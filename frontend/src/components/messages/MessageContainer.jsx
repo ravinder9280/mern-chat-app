@@ -21,11 +21,11 @@ const MessageContainer = () => {
   return (
     <div
       className={`flex ${
-        selectedConversation ? "h-screen" : ""
-      } rounded-lg overflow-hidden w-full text-center  m-2 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0  h-3/4`}
+        selectedConversation ? "h-screen " : "h-full"
+      }  rounded-lg overflow-hidden w-full   text-center m-2  bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 h-2/3 `}
     >
       <div
-        className={`md:min-w-[450px] w-full flex flex-col ${
+        className={`md:min-w-[450px]  w-full flex flex-col ${
           selectedConversation ? "md:w-3/4" : "w-full"
         }`}
       >
